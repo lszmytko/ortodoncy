@@ -1,0 +1,49 @@
+@import "./variables";
+
+.Map {
+  padding: 3rem 0 0;
+
+  .contact_info {
+    display: none;
+  }
+
+  .Map_container {
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 450px;
+
+    h4 {
+      color: white;
+      margin: 0;
+      line-height: 1.25;
+    }
+  }
+
+  .email h4 {
+    text-transform: none;
+  }
+
+  .icon {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Map {
+    .contact_info {
+      background: rgba(29, 185, 195, 0.8);
+      padding: 2rem;
+      width: 25rem;
+      height: 100%;
+      position: absolute;
+      right: 10%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

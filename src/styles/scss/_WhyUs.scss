@@ -1,0 +1,55 @@
+@import "./variables";
+
+.WhyUs {
+  margin: 3rem auto;
+  background: #eeeeee;
+  
+
+  .details_image {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+
+    img {
+      border-radius: $radius;
+    }
+  }
+
+  .WhyUs_info {
+    padding: 2rem 0;
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  &_container {
+    padding: 2rem 0;
+  }
+
+  .details{
+    text-align: center
+  }
+
+  .details_image{
+    margin: 0 auto 1rem;
+  }
+
+  // .details_text {
+  //   text-align: justify;
+  // }
+}
+
+@media screen and (min-width:576px){
+  .WhyUs{
+    .WhyUs_info{
+      grid-template-columns:  repeat(2, 1fr);;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+    .WhyUs{
+        .WhyUs_info{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

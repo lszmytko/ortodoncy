@@ -1,0 +1,54 @@
+@import "./variables";
+
+.GalleryCarousel {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $clr-main-darker;
+  //   opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container {
+    width: 80vw;
+    height: 53.33vw;
+
+    img {
+      width: 80vw;
+      height: 53.33vw;
+      object-fit: cover;
+    }
+  }
+
+  .img_container {
+    width: 100%;
+  }
+
+  .carousel-control-prev-icon {
+    color: black !important;
+  }
+
+  .right{
+      font-size: 3rem;
+      color: $clr-main-darker;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .GalleryCarousel {
+    &_container {
+      width: 600px;
+      height: 400px;
+
+      img {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}

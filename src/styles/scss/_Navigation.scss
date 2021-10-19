@@ -1,0 +1,145 @@
+@import "./_variables.scss";
+
+.Navigation {
+  padding: 1rem 0;
+  position: relative;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 6rem;
+    }
+  }
+
+  .links {
+    display: block;
+    transition: $transition;
+    position: relative;
+
+    &_hidden {
+      display: none;
+    }
+
+    .link {
+      margin-bottom: 0.375rem;
+
+      a {
+        padding: 0.375rem 0;
+      }
+    }
+  }
+
+  .links_container {
+    position: relative;
+  }
+
+  .links a {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    background: $clr-main;
+    transition: $transition;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu button {
+    background: $clr-main;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .menu-btn-icon {
+    height: 2rem;
+    color: white;
+    font-size: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown {
+  position: relative;
+  // background: red;
+  background: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links a {
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      // background: red;
+      color: $clr-main;
+
+      &:hover {
+        color: $clr-main-darker;
+      }
+    }
+
+    .links {
+      display: flex;
+
+      &_hidden {
+        transform: none;
+      }
+    }
+
+    .links .link {
+      border-right: 2px solid $clr-main-lighter;
+      padding: 0 0.5rem;
+      position: relative;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    .links a {
+      background: none;
+      margin-bottom: 0;
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .links a:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .social-links {
+      display: none;
+    }
+  }
+}

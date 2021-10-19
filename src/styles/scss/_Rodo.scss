@@ -1,0 +1,17 @@
+@import './variables';
+
+.Rodo{
+    position:fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(29, 185, 195, 0.6);
+    padding: .5rem 0;
+
+    p{
+        font-size: .75rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+    }
+}
