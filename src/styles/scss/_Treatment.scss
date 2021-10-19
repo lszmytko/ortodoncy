@@ -39,6 +39,10 @@
     }
   }
 
+  .step_text{
+    text-align: center;
+  }
+
   .step:nth-child(3) {
     .step_number {
       background: darken($clr-lightblue, 20%);

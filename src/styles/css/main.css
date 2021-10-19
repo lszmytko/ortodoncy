@@ -433,6 +433,10 @@
   line-height: 1.25rem;
 }
 
+.Treatment .step_text {
+  text-align: center;
+}
+
 .Treatment .step:nth-child(3) .step_number {
   background: #3ca1ff;
 }
