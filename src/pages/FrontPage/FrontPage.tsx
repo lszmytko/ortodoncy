@@ -15,16 +15,12 @@ const FrontPage = () => {
   return (
     <div>
       <MainInfo />
-      <div className="section-center">
-        <Navigation />
-        <Carousel />
-        <About />
-      </div>
+      <Navigation />
+      <Carousel />
+      <About />
       <WhyUs />
-      <div className="section-center">
-        <Treatment />
-        <Gallery />
-      </div>
+      <Treatment />
+      <Gallery />
       <Blog />
       <Map />
       <Footer />

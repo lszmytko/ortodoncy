@@ -3,7 +3,7 @@ import CarouselPres from "./CarouselPres";
 import photo1 from "../../images/dentist_photos/photo1.jpg";
 import photo2 from "../../images/dentist_photos/photo2.jpg";
 import photo3 from "../../images/dentist_photos/photo3.jpg";
-
+  
 
 const photos = [photo1, photo2, photo3];
 
