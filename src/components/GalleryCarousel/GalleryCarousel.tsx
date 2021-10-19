@@ -52,10 +52,9 @@ const GalleryCarousel = ({ photos, setGalleryModalActive }: Iprops) => {
             e.stopPropagation();
           }}
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <span>
+            <AiOutlineArrowLeft className="arrow" />
+          </span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -69,7 +68,7 @@ const GalleryCarousel = ({ photos, setGalleryModalActive }: Iprops) => {
           // onClick={handleMoveForward}
         >
           <span>
-            <AiOutlineArrowRight className="right"/>
+            <AiOutlineArrowRight className="arrow"/>
           </span>
           <span className="visually-hidden">Next</span>
         </button>

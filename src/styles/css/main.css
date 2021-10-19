@@ -526,6 +526,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   background: #1e1e1e;
@@ -561,7 +562,7 @@
   color: black !important;
 }
 
-.GalleryCarousel .right {
+.GalleryCarousel .arrow {
   font-size: 3rem;
   color: #1e1e1e;
 }
