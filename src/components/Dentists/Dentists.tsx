@@ -6,8 +6,16 @@ import dentist4 from "../../images/dentists_photos/dentist4.jpg";
 import dentist5 from "../../images/dentists_photos/dentist5.jpg";
 
 const Dentists = () => {
+  const scrollRef = React.useRef<HTMLInputElement>(null);
+
+  React.useEffect(() => {
+    scrollRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
-    <div className="Dentists">
+    <div className="Dentists" ref={scrollRef}>
       <div className="title">
         <h3>zespół</h3>
         <div className="underline"></div>
