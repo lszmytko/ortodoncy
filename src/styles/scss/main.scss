@@ -11,6 +11,9 @@
 @import "./_Map.scss";
 @import "./_Footer.scss";
 @import "./_Rodo.scss";
+@import "./_Prices.scss";
+@import "./_Dentists.scss";
+@import "./_Contact.scss";
 
 * {
   margin: 0;
@@ -133,6 +136,7 @@ button {
     text-transform: uppercase;
     text-align: center;
     color: $clr-main-darker;
+    letter-spacing: $spacing;
   }
 }
 

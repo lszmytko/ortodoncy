@@ -31,25 +31,16 @@ const NavigationPres = ({
         <div className="links_container">
           <ul className={`links ${!isMenuShown && "links_hidden"}`}>
             <li className="link">
-              <Link to="#aboutUS">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="link dropdown">
-              <Link to="#aboutUS">O nas</Link>
-            </li>
-            <li className="link">
-              <Link to="/cennik">Oferta</Link>
+              <Link to="/aboutus">O nas</Link>
             </li>
             <li className="link">
               <Link to="/cennik">Cennik</Link>
             </li>
             <li className="link">
-              <Link to="#aboutUS">Promocje</Link>
-            </li>
-            <li className="link">
-              <Link to="#aboutUS">Galeria</Link>
-            </li>
-            <li className="link">
-              <Link to="#aboutUS">Kontakt</Link>
+              <Link to="/contact">Kontakt</Link>
             </li>
           </ul>
         </div>

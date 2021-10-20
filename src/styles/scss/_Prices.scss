@@ -1,0 +1,60 @@
+@import "./variables";
+
+.Prices {
+  padding: 2rem 0;
+
+  .price-section{
+      margin-bottom: 2rem;
+  }
+
+  .price-section-header h3 {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #1db9c3;
+  }
+
+  .service-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem;
+    margin-bottom: 1px;
+  }
+
+  .service_detail_prices{
+      display: flex;
+  }
+
+  .service-detail:nth-child(even) {
+    background: $clr-main;
+  }
+
+  .service-detail:nth-child(odd) {
+    background: $clr-main-lighter;
+  }
+
+  .service-detail p, .service-detail span {
+    margin-bottom: 0;
+    font-size: .75rem;
+    line-height: .75rem;
+  }
+
+  .price {
+    color: $clr-main-darker;
+  }
+
+  .price_before_reduction{
+      text-decoration:line-through;
+      color: #FF5C58;
+      margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width:576px){
+    .Prices{
+        .service-detail p, .service-detail span {
+            margin-bottom: 0;
+            font-size: 1rem;
+            line-height: 1rem;
+          }
+    }
+}

@@ -10,6 +10,9 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 .MainInfo {
   background: #9d9d9d;
@@ -732,6 +735,234 @@
   color: white;
 }
 
+.Prices {
+  padding: 2rem 0;
+}
+
+.Prices .price-section {
+  margin-bottom: 2rem;
+}
+
+.Prices .price-section-header h3 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: #1db9c3;
+}
+
+.Prices .service-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .8rem;
+  margin-bottom: 1px;
+}
+
+.Prices .service_detail_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Prices .service-detail:nth-child(even) {
+  background: #9D9D9D;
+}
+
+.Prices .service-detail:nth-child(odd) {
+  background: #d0d0d0;
+}
+
+.Prices .service-detail p, .Prices .service-detail span {
+  margin-bottom: 0;
+  font-size: .75rem;
+  line-height: .75rem;
+}
+
+.Prices .price {
+  color: #1e1e1e;
+}
+
+.Prices .price_before_reduction {
+  text-decoration: line-through;
+  color: #FF5C58;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .Prices .service-detail p, .Prices .service-detail span {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.Dentists {
+  background: #eeeeee;
+  padding: 3rem 0;
+  margin-bottom: -3rem;
+}
+
+.Dentists .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Dentists .side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20rem;
+  width: 15rem;
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+  cursor: pointer;
+}
+
+.Dentists .image_container {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+  height: 20rem;
+  width: 15rem;
+}
+
+.Dentists .image_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Dentists .image_container_front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.Dentists .image_container:hover .image_container_back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.Dentists .image_container:hover .image_container_front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.Dentists .image_container_back {
+  background: white;
+  border-radius: .5rem;
+  padding: 1rem;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: justify;
+}
+
+.Dentists .side h4 {
+  color: #1e1e1e;
+}
+
+.Dentists .image_container_back_name {
+  font-size: .875rem;
+  color: #A2D2FF;
+  font-weight: 600;
+}
+
+.Dentists .image_container_back_profession {
+  font-size: .875rem;
+  color: #1597E5;
+}
+
+.Dentists .image_container_back_text {
+  font-size: .75rem;
+  color: #1597E5;
+}
+
+.Dentists .image_container_back_experience {
+  text-transform: none;
+  font-size: .875rem;
+}
+
+.Contact {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.Contact .email {
+  margin-bottom: 3rem;
+}
+
+.Contact input, .Contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 600;
+}
+
+.Contact input {
+  height: 2.5rem;
+}
+
+.Contact input:focus, .Contact textarea:focus {
+  outline: none;
+  border: 4px solid #A2D2FF;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Contact textarea, .Contact textarea:focus {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Contact input::-webkit-input-placeholder, .Contact textarea::-webkit-input-placeholder {
+  font-weight: 600;
+}
+
+.Contact input:-ms-input-placeholder, .Contact textarea:-ms-input-placeholder {
+  font-weight: 600;
+}
+
+.Contact input::-ms-input-placeholder, .Contact textarea::-ms-input-placeholder {
+  font-weight: 600;
+}
+
+.Contact input::placeholder, .Contact textarea::placeholder {
+  font-weight: 600;
+}
+
+.Contact button {
+  padding: 1rem 2rem;
+  background: #d0d0d0;
+  color: #1e1e1e;
+  font-weight: 600;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+.Contact button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -862,6 +1093,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #1e1e1e;
+  letter-spacing: 0.1rem;
 }
 
 .btn {

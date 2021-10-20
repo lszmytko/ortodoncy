@@ -1,0 +1,85 @@
+@import "./variables";
+
+.Dentists {
+  background: $clr-lightgrey-background;
+  padding: 3rem 0;
+  margin-bottom: -3rem;
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20rem;
+    width: 15rem;
+    transition: all .7s ease-in;
+    cursor: pointer;
+  }
+
+  .image_container {
+    flex-shrink: 0;
+    position: relative;
+    perspective: 1500px;
+    height: 20rem;
+    width: 15rem;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .image_container_front {
+    backface-visibility: hidden;
+  }
+
+  .image_container:hover .image_container_back {
+    transform: rotateY(0);
+  }
+
+  .image_container:hover .image_container_front {
+    transform: rotateY(180deg);
+  }
+
+  .image_container_back {
+    background: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    text-align: justify;
+  }
+
+  .side h4{
+      color: $clr-main-darker;
+  }
+
+  .image_container_back_name{
+    font-size: .875rem;
+    color: $clr-lightblue;
+    font-weight: 600;
+}
+
+  .image_container_back_profession{
+      font-size: .875rem;
+      color: #1597E5;
+  }
+
+  .image_container_back_text{
+    font-size: .75rem;
+    color: #1597E5;
+}
+
+.image_container_back_experience{
+    text-transform: none;
+    font-size: .875rem;
+}
+}
