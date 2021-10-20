@@ -23,7 +23,7 @@ const Contact = () => {
           <h3>napisz do nas</h3>
           <div className="underline"></div>
         </div>
-        <form action="https://formsubmit.co/lszmytko@gmail.com" method="POST">
+        <form action="https://formsubmit.co/979c901d3d58f81474eabc46b36912e9" method="POST">
           <input type="text" name="name" placeholder="Twoje imię" required />
           <input type="text" name="name" placeholder="Telefon kontaktowy" required />
           <input type="email" name="email" placeholder="Adres-email" required />
