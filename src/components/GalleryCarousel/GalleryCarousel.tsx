@@ -4,9 +4,10 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 interface Iprops {
   photos: string[];
   setGalleryModalActive: React.Dispatch<React.SetStateAction<boolean>>;
+  activePhotoIndex: number;
 }
 
-const GalleryCarousel = ({ photos, setGalleryModalActive }: Iprops) => {
+const GalleryCarousel = ({ photos, setGalleryModalActive, activePhotoIndex }: Iprops) => {
   const [activePhoto, setActivePhoto] = useState(0);
 
   return (
@@ -24,7 +25,7 @@ const GalleryCarousel = ({ photos, setGalleryModalActive }: Iprops) => {
             return (
               <div
                 className={
-                  index === activePhoto
+                  index === activePhotoIndex
                     ? "carousel-item active img_container"
                     : "carousel-item"
                 }

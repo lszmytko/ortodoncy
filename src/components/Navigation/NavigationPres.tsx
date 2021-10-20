@@ -13,7 +13,7 @@ const NavigationPres = ({
     <div className="Navigation">
       <div className="Navigation_container section-center">
         <div className="logo">
-          <img src="/images/logo.png" alt="heheh" />
+          <Link to="/"><img src="/images/logo.png" alt="heheh" /></Link>  
         </div>
         <div className="menu">
           <button onClick={handleMenuShow}>

@@ -14,17 +14,13 @@ const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8];
 interface Iprops {
   galleryModalActive: boolean;
   setGalleryModalActive: React.Dispatch<React.SetStateAction<boolean>>;
+  activePhotoIndex: number;
+  setActivePhotoIndex: React.Dispatch<React.SetStateAction<number>>;
+  showGalleryModal: (e: any) => void
 }
 
-const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
-  if (galleryModalActive) {
-    return (
-      <GalleryCarousel
-        photos={photos}
-        setGalleryModalActive={setGalleryModalActive}
-      />
-    );
-  }
+const GalleryPres = ({ galleryModalActive, setGalleryModalActive, activePhotoIndex, setActivePhotoIndex, showGalleryModal }: Iprops) => {
+  
 
   return (
     <section className="Gallery">
@@ -40,7 +36,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo1}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="0"
             />
           </article>
 
@@ -49,7 +46,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo2}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="1"
             />
           </article>
 
@@ -59,7 +57,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo3}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="2"
             />
           </article>
 
@@ -69,7 +68,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo4}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="3"
             />
           </article>
 
@@ -79,7 +79,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo5}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="4"
             />
           </article>
 
@@ -89,7 +90,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo6}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="5"
             />
           </article>
 
@@ -99,7 +101,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo7}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="6"
             />
           </article>
 
@@ -109,7 +112,8 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive }: Iprops) => {
             <img
               src={photo8}
               alt=""
-              onClick={() => setGalleryModalActive(true)}
+              onClick={showGalleryModal}
+              id="7"
             />
           </article>
         </section>
