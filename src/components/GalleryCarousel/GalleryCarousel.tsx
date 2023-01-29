@@ -1,4 +1,3 @@
-import React, { useState, useRef } from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 interface Iprops {
@@ -7,9 +6,11 @@ interface Iprops {
   activePhotoIndex: number;
 }
 
-const GalleryCarousel = ({ photos, setGalleryModalActive, activePhotoIndex }: Iprops) => {
-  const [activePhoto, setActivePhoto] = useState(0);
-
+const GalleryCarousel = ({
+  photos,
+  setGalleryModalActive,
+  activePhotoIndex,
+}: Iprops) => {
   return (
     <div
       className="GalleryCarousel"
@@ -69,7 +70,7 @@ const GalleryCarousel = ({ photos, setGalleryModalActive, activePhotoIndex }: Ip
           // onClick={handleMoveForward}
         >
           <span>
-            <AiOutlineArrowRight className="arrow"/>
+            <AiOutlineArrowRight className="arrow" />
           </span>
           <span className="visually-hidden">Next</span>
         </button>

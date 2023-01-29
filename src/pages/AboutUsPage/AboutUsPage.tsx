@@ -1,22 +1,21 @@
-import React from 'react'
-import Dentists from '../../components/Dentists/Dentists'
-import Footer from '../../components/Footer/Footer'
-import MainInfo from '../../components/MainInfo/MainInfo'
-import Map from '../../components/Map/Map'
-import Navigation from '../../components/Navigation/Navigation'
-import WhyUs from '../../components/WhyUs/WhyUs'
+import Dentists from "../../components/Dentists";
+import Footer from "../../components/Footer";
+import MainInfo from "../../components/MainInfo";
+import Map from "../../components/Map";
+import Navigation from "../../components/Navigation";
+import WhyUs from "../../components/WhyUs";
 
 const AboutUsPage = () => {
-    return (
-        <div>
-            <MainInfo />
-            <Navigation />
-            <Dentists />
-            <WhyUs />
-            <Map />
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div>
+      <MainInfo />
+      <Navigation />
+      <Dentists />
+      <WhyUs />
+      <Map />
+      <Footer />
+    </div>
+  );
+};
 
-export default AboutUsPage
+export default AboutUsPage;

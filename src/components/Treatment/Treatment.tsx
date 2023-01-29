@@ -1,5 +1,3 @@
-import React from "react";
-
 const Treatment = () => {
   return (
     <section className="Treatment">

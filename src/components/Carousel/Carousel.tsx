@@ -3,7 +3,6 @@ import CarouselPres from "./CarouselPres";
 import photo1 from "../../images/ortodoncy_photos/photo1.jpg";
 import photo2 from "../../images/ortodoncy_photos/photo2.jpg";
 import photo3 from "../../images/ortodoncy_photos/photo3.jpg";
-  
 
 const photos = [photo1, photo2, photo3];
 
@@ -11,7 +10,7 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   let slideInterval: NodeJS.Timeout;
 
-  const handleSlideChange = () :void => {
+  const handleSlideChange = (): void => {
     setCurrentSlide((prevSlide: number) => {
       if (prevSlide === photos.length - 1) {
         return 0;
@@ -20,10 +19,12 @@ const Carousel = () => {
     });
   };
 
-  const changeSlideManualy = ( e: React.MouseEvent<HTMLDivElement, MouseEvent>) :void =>{
+  const changeSlideManualy = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ): void => {
     clearInterval(slideInterval);
-    setCurrentSlide(Number(e.currentTarget.dataset.index))
-  }
+    setCurrentSlide(Number(e.currentTarget.dataset.index));
+  };
 
   const giveClassName = (index: number): string => {
     if (index === currentSlide) {
@@ -50,7 +51,15 @@ const Carousel = () => {
       handleSlideChange();
     }, 5000);
   }, [currentSlide]);
-  return <CarouselPres photos={photos} currentSlide={currentSlide} giveClassName={giveClassName} changeSlideManualy = {changeSlideManualy}/>;
+
+  return (
+    <CarouselPres
+      photos={photos}
+      currentSlide={currentSlide}
+      giveClassName={giveClassName}
+      changeSlideManualy={changeSlideManualy}
+    />
+  );
 };
 
 export default Carousel;

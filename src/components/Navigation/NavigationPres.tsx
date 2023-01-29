@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -13,7 +12,9 @@ const NavigationPres = ({
     <div className="Navigation">
       <div className="Navigation_container section-center">
         <div className="logo">
-          <Link to="/"><img src="/images/logo.png" alt="heheh" /></Link>  
+          <Link to="/">
+            <img src="/images/logo.png" alt="heheh" />
+          </Link>
         </div>
         <div className="menu">
           <button onClick={handleMenuShow}>

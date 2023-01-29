@@ -1,4 +1,3 @@
-import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephone, BsFillEnvelopeFill } from "react-icons/bs";
 

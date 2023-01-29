@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import dentist1 from "../../images/dentists_photos/dentist1.jpg";
 import dentist2 from "../../images/dentists_photos/dentist2.jpg";
 import dentist3 from "../../images/dentists_photos/dentist3.jpg";
@@ -6,9 +6,9 @@ import dentist4 from "../../images/dentists_photos/dentist4.jpg";
 import dentist5 from "../../images/dentists_photos/dentist5.jpg";
 
 const Dentists = () => {
-  const scrollRef = React.useRef<HTMLInputElement>(null);
+  const scrollRef = useRef<HTMLInputElement>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     scrollRef.current?.scrollIntoView({
       behavior: "smooth",
     });

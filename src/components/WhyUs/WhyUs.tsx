@@ -1,4 +1,3 @@
-import React from "react";
 import briefcase from "../../images/whyus_photos/briefcase.jpg";
 import alert from "../../images/whyus_photos/alert.jpg";
 import calendar from "../../images/whyus_photos/calendar.jpg";

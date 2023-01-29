@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import photo1 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-1.jpg";
 import photo2 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-2.jpg";
 import photo3 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-3.jpg";
@@ -7,21 +7,22 @@ import photo5 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-5.
 import photo6 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-6.jpg";
 import photo7 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-7.jpg";
 import photo8 from "../../images/gabinet_photos/gabinet-ortodontyczny-wnetrze-8.jpg";
-import GalleryCarousel from "../GalleryCarousel/GalleryCarousel";
-
-const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8];
 
 interface Iprops {
   galleryModalActive: boolean;
   setGalleryModalActive: React.Dispatch<React.SetStateAction<boolean>>;
   activePhotoIndex: number;
   setActivePhotoIndex: React.Dispatch<React.SetStateAction<number>>;
-  showGalleryModal: (e: any) => void
+  showGalleryModal: (e: any) => void;
 }
 
-const GalleryPres = ({ galleryModalActive, setGalleryModalActive, activePhotoIndex, setActivePhotoIndex, showGalleryModal }: Iprops) => {
-  
-
+const GalleryPres = ({
+  galleryModalActive,
+  setGalleryModalActive,
+  activePhotoIndex,
+  setActivePhotoIndex,
+  showGalleryModal,
+}: Iprops) => {
   return (
     <section className="Gallery">
       <div className="section-center">
@@ -33,88 +34,48 @@ const GalleryPres = ({ galleryModalActive, setGalleryModalActive, activePhotoInd
         <section className="Gallery_container">
           {/* Photo1 */}
           <article className="Gallery_photo">
-            <img
-              src={photo1}
-              alt=""
-              onClick={showGalleryModal}
-              id="0"
-            />
+            <img src={photo1} alt="" onClick={showGalleryModal} id="0" />
           </article>
 
           {/* Photo2 */}
           <article className="Gallery_photo">
-            <img
-              src={photo2}
-              alt=""
-              onClick={showGalleryModal}
-              id="1"
-            />
+            <img src={photo2} alt="" onClick={showGalleryModal} id="1" />
           </article>
 
           {/* Photo3 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo3}
-              alt=""
-              onClick={showGalleryModal}
-              id="2"
-            />
+            <img src={photo3} alt="" onClick={showGalleryModal} id="2" />
           </article>
 
           {/* Photo4 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo4}
-              alt=""
-              onClick={showGalleryModal}
-              id="3"
-            />
+            <img src={photo4} alt="" onClick={showGalleryModal} id="3" />
           </article>
 
           {/* Photo5 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo5}
-              alt=""
-              onClick={showGalleryModal}
-              id="4"
-            />
+            <img src={photo5} alt="" onClick={showGalleryModal} id="4" />
           </article>
 
           {/* Photo6 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo6}
-              alt=""
-              onClick={showGalleryModal}
-              id="5"
-            />
+            <img src={photo6} alt="" onClick={showGalleryModal} id="5" />
           </article>
 
           {/* Photo7 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo7}
-              alt=""
-              onClick={showGalleryModal}
-              id="6"
-            />
+            <img src={photo7} alt="" onClick={showGalleryModal} id="6" />
           </article>
 
           {/* Photo8 */}
 
           <article className="Gallery_photo">
-            <img
-              src={photo8}
-              alt=""
-              onClick={showGalleryModal}
-              id="7"
-            />
+            <img src={photo8} alt="" onClick={showGalleryModal} id="7" />
           </article>
         </section>
       </div>

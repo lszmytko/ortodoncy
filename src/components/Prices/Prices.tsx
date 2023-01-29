@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const Prices = () => {
-    const scrollRef = React.useRef<HTMLInputElement>(null);
+  const scrollRef = useRef<HTMLInputElement>(null);
 
-    useEffect(()=>{
-        scrollRef.current?.scrollIntoView({
-            behavior: "smooth",
-        });
-    }, [])
+  useEffect(() => {
+    scrollRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section className="Prices" ref={scrollRef}>
       <div className="section-center">

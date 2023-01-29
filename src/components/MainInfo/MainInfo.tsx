@@ -1,4 +1,3 @@
-import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 const MainInfo = () => {
